@@ -40,9 +40,9 @@ content="width=device-width, initial-scale=1.0">
       y: canvas.height - 100,
       img: new Image(),
     };
-    santa.img.src = "santa.png";
-    evilElves.img.src ="evil-elves.png";
-    snowballs.img.src = "snowball.png";
+    santa.img.src = "./assets/images/santa.png";
+    evilElves.img.src ="./assets/images/evil-elves.png";
+    snowballs.img.src = "./assets/images/snowball.png";
 
     let snowballs = [];
     let evilElves = [];
@@ -135,7 +135,7 @@ content="width=device-width, initial-scale=1.0">
       speed: 2 + Math.random() * 2,
       img: new Image(),
     });
-    evilElves[evilElves.length - 1].img.src = "evil-elves.png";
+    evilElves[evilElves.length - 1].img.src = "./assets/images/evil-elves.png";
   }
 }
 
@@ -190,7 +190,7 @@ santa.img.onload = () => {
     mainLoop();
   };
 };
-document.getElementById("background").src = "background.jpg";
+document.getElementById("background").src = "./assets/images/background.jpg";
 </script>
 </body>
 </html>
